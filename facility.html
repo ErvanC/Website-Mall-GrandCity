@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GrandCity Mall</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" type="x-icon" href="images/Earth.png">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"> GrandCity </a>
+      <ul>
+        <li><a href="index.html"> Home </a></li>
+        <li><a href="about.html"> Visit </a></li>
+        <li><a href="shop.html"> Shop </a></li>
+        <li><a href="dine.html"> Dine </a></li>
+        <li><a href="#" class="active"> Facility </a></li>
+        <li><a href="loyalty.html"> Loyalty </a></li>
+      </ul>
+    </header>
+    <section class="changi">
+      <img src="images/changi_behind.png" id="changi_behind" />
+      <h2 id="text">GrandCity!</h2>
+      <img src="images/cha_front.png" id="cha_front" />
+    </section>
+
+    <script>
+      let changi_behind = document.getElementById('changi_behind');
+      let text = document.getElementById('text');
+      let cha_front = document.getElementById('cha_front');
+
+      window.addEventListener('scroll', function () {
+        let value = window.scrollY;
+        changi_behind.style.top = value * 0.2 + 'px';
+        cha_front.style.top = value * 0 + 'px';
+        text.style.marginRight = value * 4 + 'px';
+        text.style.marginTop = value * 0.5 + 'px';
+      });
+    </script>
+
+    <!-- Facilities -->
+    <section class="facilities">
+    <h1>Our Facilities</h1>
+    
+
+    <div class="facil-row">
+      <div class="facil-col">
+          <img src="images/swim.png">
+          <h3>World Class Swimming Pool</h3>
+          <p>Enjoy the large and spacious swimming pool</p>
+      </div>
+      <div class="facil-col">
+        <img src="images/gym.png">
+        <h3>World Class Gym</h3>
+        <p>Enjoy all the complete sports equipment</p>
+      </div>
+      <div class="facil-col">
+        <img src="images/library.png">
+        <h3>World Class Library</h3>
+        <p>Enjoy books from all over the world</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="facilities2">
+  <div class="facil-row">
+    <div class="facil-col">
+        <img src="images/theatre.png">
+        <h3>Biggest Theatre in Asia</h3>
+        <p>Enjoy the opera and orchestral performances</p>
+    </div>
+    <div class="facil-col">
+      <img src="images/cinema.png">
+      <h3>Widest Cinema Screen</h3>
+      <p>Feel the excitement of a very wide cinema screen</p>
+    </div>
+    <div class="facil-col">
+      <img src="images/massage.png">
+      <h3>Professional Therapist</h3>
+      <p>Take the stress away for a moment</p>
+    </div>
+  </div>
+</section>
+
+<section class="facilities3">
+  <div class="facil-row">
+    <div class="facil-col">
+        <img src="images/basketball.png">
+        <h3>Public Basketball Courts</h3>
+        <p>There is always time to play basketball</p>
+    </div>
+    <div class="facil-col">
+      <img src="images/playground.png">
+      <h3>Kids Playground</h3>
+      <p>Be careful if your child doesn't want to go home</p>
+    </div>
+    <div class="facil-col">
+      <img src="images/picnic.png">
+      <h3>The Best Picnic Spot</h3>
+      <p>Enjoy the most beautiful picnic scenery</p>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+
+    <!-- Footer -->
+    <section class="footer">
+      <h4>About Us</h4>
+       <p>GrandCity is a successful premium mall that offers an International shopping experience and <br>wide range of fashion apparels, restaurants and entertainment choices.</p>
+
+      <div class="icons">
+        <a href="https://facebook.com/" style="filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg) brightness(103%) contrast(103%);"><i class='bx bxl-facebook-circle'></i></a>
+        <a href="https://www.instagram.com/" style="filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg) brightness(103%) contrast(103%);"><i class='bx bxl-instagram-alt'></i></a>
+        <a href="https://twitter.com/?lang=en" style="filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg) brightness(103%) contrast(103%);"><i class='bx bxl-twitter' ></i></a>
+        <a href="https://www.youtube.com/watch?v=iik25wqIuFo" style="filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg) brightness(103%) contrast(103%);"><i class='bx bxl-youtube'></i></a>
+        
+      </div>
+      <p> GrandCity <i class='bx bxs-heart-circle'></i> the best mall you can visit!</p>
+    </section>
+
+  </body>
+</html>
+  }

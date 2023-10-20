@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GrandCity Mall</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" type="x-icon" href="images/Earth.png">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"> GrandCity </a>
+      <ul>
+        <li><a href="index.html"> Home </a></li>
+        <li><a href="#" class="active"> Visit </a></li>
+        <li><a href="shop.html"> Shop </a></li>
+        <li><a href="dine.html"> Dine </a></li>
+        <li><a href="facility.html"> Facility </a></li>
+        <li><a href="loyalty.html"> Loyalty </a></li>
+      </ul>
+    </header>
+    <section class="changi">
+      <img src="images/changi_behind.png" id="changi_behind" />
+      <h2 id="text">GrandCity!</h2>
+      <img src="images/cha_front.png" id="cha_front" />
+    </section>
+
+    <script>
+      let changi_behind = document.getElementById('changi_behind');
+      let text = document.getElementById('text');
+      let cha_front = document.getElementById('cha_front');
+
+      window.addEventListener('scroll', function () {
+        let value = window.scrollY;
+        changi_behind.style.top = value * 0.2 + 'px';
+        cha_front.style.top = value * 0 + 'px';
+        text.style.marginRight = value * 4 + 'px';
+        text.style.marginTop = value * 0.5 + 'px';
+      });
+    </script>
+
+    <!-- About -->
+    <div class="Abouts">
+    <h2>ABOUT GRANDCITY</h2>
+    <p>GrandCity is a successful premium mall that offers an International shopping experience and wide range of fashion apparels, restaurants and entertainment choices.<br>GrandCity consists of East Mall and West Mall linked by the Skybridge with total area of 263.226 square meters and + 140.000 leasable floor space.
+      <br><br>Located in the city’s most famous and prestigious location at Central Jakarta, Bundaran HI, GrandCity is an integrated development comprising of a 56 floors premium-grade office tower<br> – Menara BCA, the five-star all-suite Hotel Indonesia Kempinski Jakarta and a high end serviced residential tower – Kempinski Private Residences.
+      <br><br>West Mall of GrandCity was opened for public on April 2007 and followed by East Mall on August 2007. GrandCity is hosting all the favourite brands<br>under one roof as our major anchors are Seibu Department Store, CGV* Cinemas and Thailand’s well-known department store, Central. There are several mini anchors such as Alun-Alun Indonesia, Ace Hardware, Cotton On, H&M, Gramedia, Uniqlo, Victoria’s Secret and Zara. Many of our mini anchors are also the brands’ flagship stores. There’s a number of well-known international fashion and lifestyle brands for all ages in GrandCity for instance Pull & Bear, Levi’s, Mothercare, ELC, Justice, Dr. Marten., Nike, Adidas, etc.
+      <br><br>GrandCity is not only a heaven for the fashionista but also a paradise for those who love to eat. With a total number of more than a hundred F&B tenants,<br>customers will never run out of choices of place to eat. From Paulaner Brauhaus – a Bavaria’s biggest brewer and Jakarta’s only microbrewery, Social House, Publik Markette, Union Deli, Haidilao, Gyu-kaku, Café Milano and many more.
+    </p>
+  </div>
+
+    <!-- Location -->
+    <div class="lokasi">
+        <h1>GrandCity Map Location</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.301428802048!2d106.6468045152707!3d-6.223928262690351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb20a9906e13%3A0xf75c5296d0a385e4!2sBINUS%20UNIVERSITY%2C%20Kampus%20Alam%20Sutera!5e0!3m2!1sen!2sid!4v1655135138542!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>Kav 21, Alam Sutera Jalan Jalur Sutera Barat Panunggangan Timur, RT.001/RW.004, Panunggangan, Kec. Pinang, Kota Tangerang, Banten 15143</p>
+    </div>
+
+    <hr>
+  
+
+    <!-- Footer -->
+    <section class="footer">
+      <h4>About Us</h4>
+       <p>GrandCity is a successful premium mall that offers an International shopping experience and <br>wide range of fashion apparels, restaurants and entertainment choices.</p>
+
+      <div class="icons">
+        <a href="https://facebook.com/" style="filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg) brightness(103%) contrast(103%);"><i class='bx bxl-facebook-circle'></i></a>
+        <a href="https://www.instagram.com/" style="filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg) brightness(103%) contrast(103%);"><i class='bx bxl-instagram-alt'></i></a>
+        <a href="https://twitter.com/?lang=en" style="filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg) brightness(103%) contrast(103%);"><i class='bx bxl-twitter' ></i></a>
+        <a href="https://www.youtube.com/" style="filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg) brightness(103%) contrast(103%);"><i class='bx bxl-youtube'></i></a>
+        
+      </div>
+      <p> GrandCity <i class='bx bxs-heart-circle'></i> the best mall you can visit!</p>
+    </section>
+
+  </body>
+</html>
+}
